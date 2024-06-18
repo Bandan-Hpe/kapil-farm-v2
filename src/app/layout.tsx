@@ -8,8 +8,8 @@ import Container from "@/Components/container";
 const inter = Poppins({ weight: "400", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "My Blog App",
-  description: "This is a blog post website",
+  title: "Kapil Farm",
+  description: "Kapil Farm Website",
 };
 
 export default function RootLayout({

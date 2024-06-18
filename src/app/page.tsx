@@ -1,4 +1,7 @@
+import About from "@/Components/HomoComponent/about";
+import Farmhouse from "@/Components/HomoComponent/farmhouse";
 import HeroSection from "@/Components/HomoComponent/heroSection";
+import Location from "@/Components/HomoComponent/location";
 import Mruganayani from "@/Components/HomoComponent/mruganayani";
 
 export default function Home() {
@@ -6,6 +9,9 @@ export default function Home() {
     <main className="mt-3">
       <HeroSection />
       <Mruganayani />
+      <Farmhouse />
+      <About />
+      <Location/>
     </main>
   );
 }

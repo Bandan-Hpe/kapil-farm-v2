@@ -3,8 +3,8 @@ import gif from "../../../public/assets/form_bg.gif";
 const HeroSection = () => {
   return (
     <section className="bg-[url('/assets/LP-image.png')] bg-cover h-screen rounded-3xl flex align-items-center">
-      <div className="w-1/2 px-12">
-        <h1 className="bottom-0  text-white font-bold absolute px-5 md:text-6xl uppercase tracking-wider ">
+      <div className="w-1/2 px-12 flex items-end">
+        <h1 className="  text-white font-bold  px-5 lg:text-2xl xl:text-4xl text:5xl uppercase tracking-wider sm:xl py-8">
           Venture into the land <br />
           of limitless possibilities!
         </h1>
