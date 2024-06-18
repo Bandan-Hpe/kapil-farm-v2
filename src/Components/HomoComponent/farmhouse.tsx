@@ -27,7 +27,7 @@ const Farmhouse = () => {
           </p>
           <p className="mt-5 text-xl text-[#7D7D7D] text-justify tracking-wide">
             The earlier you begin investing, the more time you have to see your
-            gains grow, build wealth, and secure a financial future. If you're
+            gains grow, build wealth, and secure a financial future. If you re
             searching for the ideal investment opportunity, look no
             further—invest in Mruganayani, an expansive 50-acre oasis of
             untouched beauty. Secure your investment today and pave the way for
