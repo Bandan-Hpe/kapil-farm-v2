@@ -12,7 +12,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-image": "url('/assets/LP-image.png')",
       },
+    },
+    colors: {
+      green: "#267139",
+      white:"#ffffff",
+      lightgolden:"#FFFBCD",
+      darkgreen:"#083129"
     },
   },
   plugins: [],

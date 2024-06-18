@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/header";
 import Footer from "@/Components/footer";
 import Container from "@/Components/container";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ weight: "400", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "My Blog App",

@@ -1,32 +1,38 @@
-"use client";
+import Image from "next/image";
+import logo from "../../public/assets/logo/color.png";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-const navLinks = [
+
+const navLink = [
   {
     href: "/",
-    label: "Home",
+    label: "WHO ARE WE",
   },
   {
-    href: "/posts",
-    label: "Posts",
+    href: "/highlights",
+    label: "HIGHLIGHTS",
+  },
+  {
+    href: "/projects",
+    label: "OUR PROJECTS",
+  },
+  {
+    href: "/contact",
+    label: "CONTACT US",
   },
 ];
 
 const Header = () => {
-  const pathname = usePathname();
-
   return (
-    <header className="flex justify-between items-center py-4 px-7 border-b">
-      <h2 className="text-3xl font-bold">BANDAN</h2>
-      <nav>
+    <header className="flex justify-between items-center py-4 ">
+      <Image src={logo} alt="logo" priority />
+      <nav className="w-75">
         <ul className="flex  gap-x-5  text-[16px]">
-          {navLinks.map((link) => (
+          {navLink.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`${
-                  pathname === link.href ? "text-zinc-900" : "text-zinc-400"
-                }`}
+                className="text-[14px] 
+                 text-green"
               >
                 {link.label}
               </Link>
