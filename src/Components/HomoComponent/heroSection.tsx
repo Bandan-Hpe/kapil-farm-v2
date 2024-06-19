@@ -2,15 +2,15 @@ import Image from "next/image";
 import gif from "../../../public/assets/form_bg.gif";
 const HeroSection = () => {
   return (
-    <section className="bg-[url('/assets/LP-image.png')] bg-cover h-screen rounded-3xl flex align-items-center">
+    <section className="bg-[url('/assets/LP-image.png')] bg-cover  rounded-3xl flex align-items-center">
       <div className="w-1/2 px-12 flex items-end">
         <h1 className="  text-white font-bold  px-5 lg:text-2xl xl:text-4xl text:5xl uppercase tracking-wider sm:xl py-8">
           Venture into the land <br />
           of limitless possibilities!
         </h1>
       </div>
-      <div className="w-1/2 flex items-end justify-center flex-col  px-12">
-        <div className="bg-lightgolden  rounded-2xl max-w-[500px]">
+      <div className="w-1/2 flex items-end justify-center flex-col relative px-12 m-10">
+        <div className="bg-lightgolden  rounded-2xl max-w-[500px] ">
           <div className="px-8 py-8">
             <p className="text-center">
               If you are looking to buy farmland in Hyderabad,

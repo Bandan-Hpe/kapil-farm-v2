@@ -51,13 +51,13 @@ export const Card = React.memo(function CardComponent(props: CardProps) {
     const { data, dataIndex } = props;
     const { cover } = data[dataIndex];
     return (
-      <div className="p-1 bg-white rounded-md">
+      <div className="p-1 bg-white rounded-md overflow-hidden">
         <Image
           draggable={false}
           src={cover}
           alt={`Slide ${dataIndex}`}
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="rounded-lg shadow-xl"
         />
       </div>
@@ -68,7 +68,7 @@ export const Card = React.memo(function CardComponent(props: CardProps) {
 export default function ResponsiveCarousel() {
     const ref = React.useRef();
     return (
-      <div className="w-full mt-10 ">
+      <div className="w-full mx-[100px] my-24 overflow-hidden">
         <ResponsiveContainer
           carouselRef={ref}
           render={(parentWidth, carouselRef) => {
