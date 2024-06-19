@@ -41,24 +41,28 @@ export const data = [
     title: "A Silent Voice",
   },
 ];
+type CardProps = {
+    data: { cover: string, title: string }[],
+    dataIndex: number
+  };
 
 // Card component definition
-export const Card = React.memo(function CardComponent(props) {
-  const { data, dataIndex } = props;
-  const { cover } = data[dataIndex];
-  return (
-    <div className="p-2 bg-white rounded-md">
-      <Image
-        draggable={false}
-        src={cover}
-        alt={`Slide ${dataIndex}`}
-        width={600}
-        height={400}
-       
-      />
-    </div>
-  );
-});
+export const Card = React.memo(function CardComponent(props: CardProps) {
+    const { data, dataIndex } = props;
+    const { cover } = data[dataIndex];
+    return (
+      <div className="p-1 bg-white rounded-md">
+        <Image
+          draggable={false}
+          src={cover}
+          alt={`Slide ${dataIndex}`}
+          width={500}
+          height={500}
+          className="rounded-lg shadow-xl"
+        />
+      </div>
+    );
+  });
 
 // ResponsiveCarousel component definition
 export default function ResponsiveCarousel() {
@@ -77,7 +81,7 @@ export default function ResponsiveCarousel() {
                 slideComponent={Card}
                 slideWidth={parentWidth < 800 ? parentWidth - 40 : 750}
                 carouselWidth={parentWidth}
-                data={data} // Pass in the data prop to the Card component
+                data={data} 
                 currentVisibleSlide={currentVisibleSlide}
                 maxVisibleSlide={5}
                 useGrabCursor
