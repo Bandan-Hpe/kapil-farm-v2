@@ -9,7 +9,7 @@ const HeroSection = () => {
           of limitless possibilities!
         </h1>
       </div>
-      <div className="w-1/2 flex items-end justify-center flex-col relative px-12">
+      <div className="w-1/2 flex items-end justify-center flex-col  px-12">
         <div className="bg-lightgolden  rounded-2xl max-w-[500px]">
           <div className="px-8 py-8">
             <p className="text-center">
