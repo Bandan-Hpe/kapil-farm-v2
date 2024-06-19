@@ -31,7 +31,7 @@ const Header = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-[14px] 
+                className="text-[15px] 
                  text-green"
               >
                 {link.label}
