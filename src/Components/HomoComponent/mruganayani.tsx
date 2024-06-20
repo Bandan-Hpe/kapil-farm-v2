@@ -8,11 +8,15 @@ import icon5 from "../../../public/assets/m-ICON/Frame 20.png";
 
 const Mruganayani = () => {
   return (
-    <section className="mt-10 rounded-full shadow-2xl mx-w-75 md:p-10">
+    <section className="mt-10 md:rounded-full md:px-5 sm:rounded-md shadow-2xl mx-w-75 md:p-10 mx-5">
       <div className=" py-8 lg:flex items-center  justify-around">
+        <div className="flex md:justify-center sm:justify-center">
         <Image src={mrugayan} alt="mrugayan" />
+
+
+        </div>
         <div className="">
-          <h1 className="text-green text-4xl font-bold text-center">
+          <h1 className="text-green lg:text-4xl font-bold text-center md:text-2xl sm:text-2xl">
             Whats Sets <span className="text-[#7ABF4E]">Mruganayani</span> Apart?
           </h1>
           <p className="text-center text-[#BC9D3D]">

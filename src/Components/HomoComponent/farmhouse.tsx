@@ -7,7 +7,7 @@ import infograph from "../../../public/assets/infograph.png";
 const Farmhouse = () => {
   return (
     <>
-      <section className="bg-[url('/assets/farm.png')] bg-cover lg:h-[900px] rounded-3xl flex items-center px-10 py-10 mt-10">
+      <section className="bg-[url('/assets/farm.png')] bg-cover lg:h-[900px]  flex items-center px-10 py-10 mt-10">
         <div className=" lg:flex rounded-3xl  align-items-center bg-white  px-10 py-10 gap-10">
           <div className="lg:w-1/2 flex items-center  ">
             <Image src={farm} alt="farm" className="rounded-3xl " />
@@ -41,20 +41,12 @@ const Farmhouse = () => {
         </div>
       </section>
       <section className="relative flex flex-col items-center">
-        <Image
-          src={left}
-          alt="leaf"
-          className="absolute -left-10 lg:w-40"
-          
-        />
-        <Image
-          src={right}
-          alt="leaf"
-          className="absolute -right-10 lg:w-40"
-          
-        />
-        <h1 className="text-green font-bold text-4xl my-10 text-center">Why Choose Mruganayani by Kapil Farms?</h1>
-        <Image src={infograph} alt="why" className=" m-5 w-4/5" />
+        <Image src={left} alt="leaf" className="absolute left-0 lg:w-32 sm:hidden" />
+        <Image src={right} alt="leaf" className="absolute right-0 lg:w-32 sm:hidden" />
+        <h1 className="text-green font-bold lg:text-4xl my-10 text-center md:text-2xl sm:text-xl">
+          Why Choose Mruganayani by Kapil Farms?
+        </h1>
+        <Image src={infograph} alt="why" className=" m-5 w-4/5 sm:w-full" />
       </section>
     </>
   );

@@ -68,13 +68,14 @@ export const Card = React.memo(function CardComponent(props: CardProps) {
 export default function ResponsiveCarousel() {
     const ref = React.useRef();
     return (
-      <div className="w-full mx-[100px] my-24 overflow-hidden">
+      <div className="w-full  my-24 overflow-hidden flex justify-center">
+        <div className="w-2/3">
         <ResponsiveContainer
           carouselRef={ref}
           render={(parentWidth, carouselRef) => {
             let currentVisibleSlide = 5;
             if (parentWidth <= 1440) currentVisibleSlide = 3;
-            if (parentWidth <= 1080) currentVisibleSlide = 1;
+            if (parentWidth <= 768) currentVisibleSlide = 1;
             return (
               <StackedCarousel
                 ref={carouselRef}
@@ -89,6 +90,9 @@ export default function ResponsiveCarousel() {
             );
           }}
         />
+
+        </div>
+       
       </div>
     );
   }

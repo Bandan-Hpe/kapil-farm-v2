@@ -14,6 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-image": "url('/assets/LP-image.png')",
       },
+      screens:{
+        'sm': '340px',
+      }
     },
     colors: {
       green: "#267139",

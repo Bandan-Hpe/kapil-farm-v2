@@ -4,7 +4,7 @@ import loc from "../../../public/assets/loc.png";
 
 const Location = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-10 ">
       <div>
         <h1 className="text-green uppercase text-3xl font-bold text-center">
           Location
@@ -13,11 +13,11 @@ const Location = () => {
           Strategically located in Narayankhed, the high-growth corridor
         </p>
       </div>
-      <div className="lg:flex mt-10">
+      <div className="lg:flex mt-10 gap-5 mx-5">
         <div className="lg:w-1/2 md:flex md:justify-center ">
           <Image src={loc1} alt="loc" />
         </div>
-        <div className="lg:w-1/2 md:flex md:justify-center md:mt-10 lg:mt-0">
+        <div className="lg:w-1/2 md:flex md:justify-center md:mt-10 lg:mt-0 sm:mt-10">
           <Image
             src={loc}
             alt="loc"
@@ -28,7 +28,7 @@ const Location = () => {
 
       <div className="bg-[url('/assets/moneyplant.png')]  bg-cover h-[400px] mt-10 ">
         <div className=" px-10 py-10 flex flex-col items-start justify-end h-[100%]">
-          <h1 className="lg:text-4xl text-white font-bold uppercase">
+          <h1 className="lg:text-4xl text-white font-bold uppercase sm:text-2xl md:text-2xl ">
             Start your financial <br /> growth today!
           </h1>
           <button className="text-white font-bold text-xl bg-[#7ABF4E] px-4 py-3 rounded-full mt-5">

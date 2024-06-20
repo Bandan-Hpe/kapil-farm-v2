@@ -19,7 +19,7 @@ const Footer = () => {
               tranquility away from the fast-paced urban environment.
             </p>
           </div>
-          <div className="md:w-1/2 flex  flex-col items-end">
+          <div className="md:w-1/2 flex  flex-col md:items-end sm:items-start sm:mt-5">
             <button className="bg-white text-green px-2 py-2 font-bold rounded-full">
               Subscribe Now
             </button>

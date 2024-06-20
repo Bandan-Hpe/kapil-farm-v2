@@ -23,10 +23,10 @@ const navLink = [
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center py-4 ">
+    <header className="flex justify-between items-center py-4 px-5">
       <Image src={logo} alt="logo" priority />
       <nav className="w-75">
-        <ul className="flex  gap-x-5  text-[16px]">
+        <ul className="lg:flex  gap-x-5  text-[16px] sm:hidden md:flex ">
           {navLink.map((link) => (
             <li key={link.href}>
               <Link
