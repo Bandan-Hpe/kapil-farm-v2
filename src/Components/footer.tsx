@@ -5,12 +5,10 @@ import Link from "next/link";
 import fb from "./../../public/assets/icons/fb.png";
 import insta from "./../../public/assets/icons/insta.png";
 import ln from "./../../public/assets/icons/ln.png";
-import Qr from "./../../public/assets/QRcode.png";
 const Footer = () => {
   return (
-    <footer className=" text-zinc-400 ">
-      <Image src={footer} alt="footerimg" />
-      <section className="bg-[#0C352C]  px-10 py-5">
+    <footer className=" text-zinc-400 mt-10">
+      <section className="bg-[#98c03d]  px-10 py-5">
         <div className="md:flex ">
           <div className="md:w-1/2">
             <Image src={footerlogo} alt="logo" />
@@ -19,42 +17,11 @@ const Footer = () => {
               tranquility away from the fast-paced urban environment.
             </p>
           </div>
-          <div className="md:w-1/2 flex  flex-col md:items-end sm:items-start sm:mt-5">
-            <button className="bg-white text-green px-2 py-2 font-bold rounded-full">
-              Subscribe Now
-            </button>
-            <p className="text-white mt-2">
-              Don’t miss our future updates. Subscribe right away.
-            </p>
-            <ul className="flex gap-5 mt-2">
-              <li>
-                <Link href="#">
-                  <Image src={fb} alt="fb" className="w-10" />
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <Image src={insta} alt="insta" className="w-10"/>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <Image src={ln} alt="ln" className="w-10"/>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="md:flex mt-5">
-          <div className="md:w-2/3">
-            <Image src={Qr} alt="qr" className="w-40" />
-            <p className="text-white text-md mt-2">For more info scan here<br/> Number - 9705311222</p>
-          </div>
-          <div className="md:w-2/3 flex flex-col justify-end">
-            <h1 className="text-3xl font-bold text-[#7ABF4E] tracking-wide text-right">
-              QUICK LINKS
+          <div className="md:w-1/3 flex flex-col justify-end">
+            <h1 className="text-3xl font-bold text-white tracking-wide ">
+              Quick Links
             </h1>
-            <ul className="flex justify-between mt-2">
+            <ul className="flex  flex-col justify-between mt-5">
               <li>
                 <Link href="#" className="text-white uppercase">
                   who are we
@@ -82,8 +49,43 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="md:w-1/3 flex  flex-col md:items-start sm:items-start sm:mt-5">
+            <h1 className=" text-3xl font-bold text-white tracking-wide ">
+              Subscribe Now
+            </h1>
+            <p className="text-white mt-2">
+              Don’t miss our future updates. Subscribe right away.
+            </p>
+            <ul className="flex gap-5 mt-2">
+              <li>
+                <Link href="#">
+                  <Image src={fb} alt="fb" className="w-10" />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image src={insta} alt="insta" className="w-10" />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image src={ln} alt="ln" className="w-10" />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+      <div className="md:flex  bg-[#000] justify-around items-center">
+        <p className="text-white text2xl px-5 py-5">
+          © 2024 Kapil Farms - All rights reserved.
+        </p>
+        <ul className="flex text-white gap-10">
+          <li>Home</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+        </ul>
+      </div>
     </footer>
   );
 };

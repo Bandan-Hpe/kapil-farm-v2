@@ -1,98 +1,56 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import {
-  StackedCarousel,
-  ResponsiveContainer,
-} from "react-stacked-center-carousel";
+import Slider from "react-slick";
+// In your component file
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
-// Data with corrected title
-export const data = [
+const data = [
   {
-    cover: "/assets/Gallery/01.jpg",
-    title: "Interstellar",
+    path: "/assets/Gallery/01.jpg",
   },
   {
-    cover: "/assets/Gallery/02.jpg",
-    title: "Inception",
+    path: "/assets/Gallery/02.jpg",
   },
   {
-    cover: "/assets/Gallery/03.jpg",
-    title: "Blade Runner 2049",
+    path: "/assets/Gallery/03.jpg",
   },
   {
-    cover: "/assets/Gallery/04.jpg",
-    title: "Iron Man 3",
+    path: "/assets/Gallery/04.jpg",
   },
   {
-    cover: "/assets/Gallery/05.jpg",
-    title: "Venom",
+    path: "/assets/Gallery/05.jpg",
   },
   {
-    cover: "/assets/Gallery/06.jpg",
-    title: "Steins Gate",
+    path: "/assets/Gallery/06.jpg",
   },
   {
-    cover: "/assets/Gallery/07.jpg",
-    title: "One Punch Man",
+    path: "/assets/Gallery/07.jpg",
   },
   {
-    cover: "/assets/Gallery/08.jpg",
-    title: "A Silent Voice",
+    path: "/assets/Gallery/08.jpg",
   },
 ];
-type CardProps = {
-    data: { cover: string, title: string }[],
-    dataIndex: number
+
+function Carousel() {
+  const settings = {
+    slidesToShow: 4,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 1,
   };
+  return (
+    <div className="slider-container bg-[ #e2f1cc]">
+      <Slider {...settings}>
+        {data.map((item) => (
+          <div key={item.path} className="mt-5">
+            <Image src={item.path} alt="img" width={380} height={370} />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+}
 
-// Card component definition
-export const Card = React.memo(function CardComponent(props: CardProps) {
-    const { data, dataIndex } = props;
-    const { cover } = data[dataIndex];
-    return (
-      <div className="p-1 bg-white rounded-md overflow-hidden">
-        <Image
-          draggable={false}
-          src={cover}
-          alt={`Slide ${dataIndex}`}
-          width={400}
-          height={400}
-          className="rounded-lg shadow-xl"
-        />
-      </div>
-    );
-  });
-
-// ResponsiveCarousel component definition
-export default function ResponsiveCarousel() {
-    const ref = React.useRef();
-    return (
-      <div className="w-full  my-24 overflow-hidden flex justify-center">
-        <div className="w-2/3">
-        <ResponsiveContainer
-          carouselRef={ref}
-          render={(parentWidth, carouselRef) => {
-            let currentVisibleSlide = 5;
-            if (parentWidth <= 1440) currentVisibleSlide = 3;
-            if (parentWidth <= 768) currentVisibleSlide = 1;
-            return (
-              <StackedCarousel
-                ref={carouselRef}
-                slideComponent={Card}
-                slideWidth={parentWidth < 800 ? parentWidth - 40 : 750}
-                carouselWidth={parentWidth}
-                data={data} 
-                currentVisibleSlide={currentVisibleSlide}
-                maxVisibleSlide={5}
-                useGrabCursor
-              />
-            );
-          }}
-        />
-
-        </div>
-       
-      </div>
-    );
-  }
+export default Carousel;

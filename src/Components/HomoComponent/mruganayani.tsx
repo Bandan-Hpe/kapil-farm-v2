@@ -1,51 +1,57 @@
 import Image from "next/image";
-import mrugayan from "../.././../public/assets/mrugayan.png";
-import icon1 from "../../../public/assets/m-ICON/Frame 16.png";
-import icon2 from "../../../public/assets/m-ICON/Frame 17.png";
-import icon3 from "../../../public/assets/m-ICON/Frame 18.png";
-import icon4 from "../../../public/assets/m-ICON/Frame 19.png";
-import icon5 from "../../../public/assets/m-ICON/Frame 20.png";
+import icon1 from "../../../public/assets/Icon1.png";
+import icon2 from "../../../public/assets/Icon2.png";
+import icon3 from "../../../public/assets/Icon3.png";
+import icon4 from "../../../public/assets/Icon4.png";
+import icon5 from "../../../public/assets/Icon5.png";
 
 const Mruganayani = () => {
   return (
-    <section className="mt-10 md:rounded-full md:px-5 sm:rounded-md shadow-2xl mx-w-75 md:p-10 mx-5">
-      <div className=" py-8 lg:flex items-center  justify-around">
-        <div className="flex md:justify-center sm:justify-center">
-        <Image src={mrugayan} alt="mrugayan" />
-
-
-        </div>
-        <div className="">
-          <h1 className="text-green lg:text-4xl font-bold text-center md:text-2xl sm:text-2xl">
-            Whats Sets <span className="text-[#7ABF4E]">Mruganayani</span> Apart?
+    <section className="mt-5   mx-5">
+      <h1 className="text-center text-4xl font-bold tracking-wide">
+        Why You Should Consider Farmland at Mruganayani
+      </h1>
+      <div className="flex justify-around relative">
+        <div className="h-5 w-full bg-[#dee0df] absolute top-24 "></div>
+        <div className="flex flex-col items-center text-center z-10">
+          <Image src={icon1} alt="icon" width={200} height={200} />
+          <h1 className="text-xl">
+            100%
+            <br />
+            Clear Title
           </h1>
-          <p className="text-center text-[#BC9D3D]">
-            Unparalleled access to farmland investments with
-          </p>
-          <div className="flex flex-wrap justify-around mt-8 gap-5">
-            <div className="flex flex-col items-center">
-              <Image src={icon1} alt="icon1" />
-              <p className="text-black sm:text-md">100% Clear Time</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src={icon2} alt="icon1" />
-              <p className="text-black sm:text-md">Patta Passbook</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src={icon3} alt="icon1" />
-              <p className="text-black sm:text-md">Encroachment-Free</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src={icon4} alt="icon1" />
-              <p className="text-black sm:text-md">TS Rythu Bharosa</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src={icon5} alt="icon1" />
-              <p className="text-black sm:text-md">
-                50 kg Farm Produce Annually
-              </p>
-            </div>
-          </div>
+        </div>
+        <div className="flex flex-col items-center text-center z-10">
+          <Image src={icon2} alt="icon" width={200} height={200} />
+          <h1 className="text-xl">
+            Patta
+            <br />
+            Passbook
+          </h1>
+        </div>
+        <div className="flex flex-col items-center text-center z-10">
+          <Image src={icon3} alt="icon" width={200} height={200} />
+          <h1 className="text-xl">
+            Free from
+            <br />
+            Encroachment
+          </h1>
+        </div>
+        <div className="flex flex-col items-center text-center z-10">
+          <Image src={icon4} alt="icon" width={200} height={200} />
+          <h1 className="text-xl">
+            TS Rythu
+            <br />
+            Bharosa
+          </h1>
+        </div>
+        <div className="flex flex-col items-center text-center z-10">
+          <Image src={icon5} alt="icon" width={200} height={200} />
+          <h1 className="text-xl">
+            50kg of Farm
+            <br />
+            Produce Annually
+          </h1>
         </div>
       </div>
     </section>

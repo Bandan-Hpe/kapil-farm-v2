@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className}  bg-zinc-100 text-zinc-800  min-h-screen  py-5`}
-      >
+      <body className={`${inter.className}    min-h-screen `}>
         <Container>
           <Header />
           {children}
