@@ -8,7 +8,7 @@ const Location = () => {
   return (
     <section className="mt-10 ">
       <div className=" relative   flex flex-col items-center mt-10 ">
-        <h1 className="text-4xl text-dark font-bold">
+        <h1 className="lg:text-4xl text-dark font-bold text-center">
         Strategically located in Narayankhed, the high-growth corridor        </h1>
         <Image src={map} alt="img" />
       </div>

@@ -8,11 +8,11 @@ import icon5 from "../../../public/assets/Icon5.png";
 const Mruganayani = () => {
   return (
     <section className="mt-5   mx-5">
-      <h1 className="text-center text-4xl font-bold tracking-wide">
+      <h1 className="text-center text-4xl font-bold tracking-wide sm:text-xl">
         Why You Should Consider Farmland at Mruganayani
       </h1>
-      <div className="flex justify-around relative">
-        <div className="h-5 w-full bg-[#dee0df] absolute top-24 "></div>
+      <div className="lg:flex justify-around relative">
+        <div className="h-5 w-full bg-[#dee0df] absolute top-24 sm:hidden md:hidden"></div>
         <div className="flex flex-col items-center text-center z-10">
           <Image src={icon1} alt="icon" width={200} height={200} />
           <h1 className="text-xl">

@@ -1,9 +1,15 @@
 "use client";
-import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid, Pagination, Navigation, Thumbs } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+
+
 // In your component file
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Image from "next/image";
 
 const data = [
@@ -34,21 +40,27 @@ const data = [
 ];
 
 function Carousel() {
-  const settings = {
-    slidesToShow: 4,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
-  };
   return (
-    <div className="slider-container bg-[ #e2f1cc]">
-      <Slider {...settings}>
+    <div className=" bg-[ #e2f1cc]">
+      <Swiper
+        slidesPerView={4}
+        grid={{
+          rows: 2,
+        }}
+        navigation={true}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Grid, Pagination, Navigation, Thumbs]}
+        className="mySwiper"
+      >
         {data.map((item) => (
-          <div key={item.path} className="mt-5">
-            <Image src={item.path} alt="img" width={380} height={370} />
-          </div>
+          <SwiperSlide key={item.path} className="mt-5 ">
+            <Image src={item.path} alt="img" width={300} height={300} />
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   );
 }

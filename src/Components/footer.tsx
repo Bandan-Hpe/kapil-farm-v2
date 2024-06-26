@@ -8,7 +8,7 @@ import ln from "./../../public/assets/icons/ln.png";
 const Footer = () => {
   return (
     <footer className=" text-zinc-400 mt-10">
-      <section className="bg-[#98c03d]  px-10 py-5">
+      <section className="bg-[#98c03d]  lg:px-10 py-5 sm:px-5">
         <div className="md:flex ">
           <div className="md:w-1/2">
             <Image src={footerlogo} alt="logo" />
@@ -80,7 +80,7 @@ const Footer = () => {
         <p className="text-white text2xl px-5 py-5">
           © 2024 Kapil Farms - All rights reserved.
         </p>
-        <ul className="flex text-white gap-10">
+        <ul className="flex text-white gap-10 justify-center">
           <li>Home</li>
           <li>Privacy Policy</li>
           <li>Terms & Condition</li>

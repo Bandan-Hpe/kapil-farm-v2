@@ -22,7 +22,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <form action="" className="mt-1 flex flex-col items-center px-8">
+          <form action="" className="mt-1 flex flex-col items-center p-8">
             <input
               type="text"
               className="bg-white border-b   p-2  focus:outline-none w-full mt-2"
@@ -38,7 +38,7 @@ const HeroSection = () => {
               className="bg-white border-b   p-2   focus:outline-none w-full mt-8"
               placeholder="E-mail ID"
             />
-            <button className="bg-[#267139] text-white p-3 mt-8 text-3xl rounded-xl">
+            <button className="bg-[#267139] text-white p-3 mt-8 lg:text-3xl rounded-xl">
               Submit
             </button>
           </form>

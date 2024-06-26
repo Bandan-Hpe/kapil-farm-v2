@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/node": "^20",
